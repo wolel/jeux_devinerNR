@@ -16,36 +16,35 @@
 </head>
 <body>
 
-
-<div id="flexTxt">
-<h1>Deviner le nombre</h1>
-<h2>Trouver le nombre entre 1 et 100 (Vous n'avez que 10 essais)</h2>
-</div>
-
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-
-<!-- Modal content -->
-<div class="modal-content">
-     <span class="close">close</span>
-     <p id="txtModal">TU as PERDU!</p>
-</div>
+<div id="cadre">
+    <div>
+        <h1>Deviner le nombre</h1>
+        <h2>Trouver le nombre entre 1 et 100 (Vous n'avez que 10 essais)</h2>
     </div>
 
-<input type="number" id="champ">
-<button id="btnVerifierNR" onclick="devine()" >Verifier Nombre</button>
-<button id="btnRestartGame" onclick="reloadThePage()">Rejouer</button>
+<!-- Modal -->
+    <div id="myModal" class="modal">
+<!-- Modal content -->
+        <div class="modal-content">
+             <span class="close">close</span>
+             <p id="txtModal">TU as PERDU!</p>
+        </div>
+    </div>
 
+    <div>
+        <button id="btnVerifierNR" onclick="devine()">Verifier Nombre</button>
+        <input type="number" id="champ">
+        <button id="btnRestartGame" onclick="reloadThePage()">Rejouer</button>
+    </div>
 
+    <div id="resultat">
+        <p>Resultat</p>
+    </div>
 
-<div id="flexP">
-<p id="resultat">Resultat</p>
-</div>
-
-<div>
-<div id="nrEssais">0</div>
-<div id="listeEssais"></div>
+    <div>
+        <div id="nrEssais">0</div>
+        <div id="listeEssais">...</div>
+    </div>
 </div>
 
 <script src="script.js"></script>
