@@ -1,0 +1,149 @@
+body{
+
+    background-image: url("Frame_background.jpg");
+}
+h1{font-size: 60px;color: white;font-family: "Open Sans", serif}
+
+h2{color: white;font-size: 20px;
+    font-family: "Open Sans", serif;margin-top: -10px; margin-bottom: 30px}
+#resultat{
+    margin-left: -187px;
+    margin-top: 6px;
+    font-size: 30px;
+    color: #222f3e;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    border: 3px solid #332;
+}
+
+
+#listeEssais{
+    width: 500px;
+    height: 60px;
+    float: right;
+    justify-items: right;
+    margin-top: -200px;
+    margin-right: 50px;
+    color: white;
+    background-color: #333;
+    border: 1px solid white;
+    font-size: 25px;
+}
+#nrEssais{
+    width: 100px;
+    height: 60px;
+    float: left;
+    justify-self: left;
+    margin-top: -200px;
+    margin-left: 100px;
+    color: white;
+    background-color: #333;
+    border: 1px solid white;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+input{
+    margin-top: 160px;
+    margin-left: 690px;
+    padding: 20px;
+    width: 200px;
+    font-size: 40px;
+    background-color:#333;
+    opacity: .9;
+    color: white;
+    text-align: center;
+}
+#compteur{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+   margin-top: -200px;
+    margin-left: 200px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#flexP{
+    display: flex;
+    justify-content: center;
+}
+#flexTxt{
+    margin-left: 490px;
+    width: 800px;
+    padding: 30px;
+
+}
+#btnVerifierNR{
+    position: absolute;
+    background-color: yellowgreen;
+    margin-top: 80px;
+    margin-left:-187px;
+    color: white;
+    outline: none;
+    cursor:pointer;
+    text-transform: uppercase;
+    padding: 20px;
+
+
+}
+#btnRestartGame{
+    position: absolute;
+    margin-top: 80px;
+    margin-left:-161px;
+    background: white;
+    outline: none;
+    cursor:pointer;
+    text-transform: uppercase;
+    padding: 20px;
+    display: none;
+
+}
+/*------------------------------------*/
+/* The Modal (background) */
+#txtModal{
+    margin-top: 6px;
+    margin-left: 470px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 30px 30px 30px;
+    border: none;
+    color: white;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: darkred;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
